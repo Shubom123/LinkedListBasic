@@ -42,4 +42,9 @@ public class List {
         previousNode.next = newNode;
         newNode.next = tempNode;
     }
+    public Node pop(){
+        Node tempNode = head;
+        head = head.next;
+        return tempNode;
+    }
 }
