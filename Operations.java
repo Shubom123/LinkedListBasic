@@ -39,4 +39,15 @@ public class Operations {
         System.out.println("After poping");
         linkedList.print();
     }
+    public static void removeLast(){
+        List linkedList = new List();
+        linkedList.push(70);
+        linkedList.push(30);
+        linkedList.push(56);
+        System.out.println("Before poping");
+        linkedList.print();
+        linkedList.popLast();
+        System.out.println("After poping");
+        linkedList.print();
+    }
 }
