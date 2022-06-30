@@ -37,4 +37,9 @@ public class List {
             tail = newNode;
         }
     }
+    public void insertInBetween(Node previousNode, Node newNode){
+        Node tempNode = previousNode.next;
+        previousNode.next = newNode;
+        newNode.next = tempNode;
+    }
 }
