@@ -50,4 +50,15 @@ public class Operations {
         System.out.println("After poping");
         linkedList.print();
     }
+    public static void removeBySearch(){
+        List linkedList = new List();
+        linkedList.push(70);
+        linkedList.push(30);
+        linkedList.push(56);
+        System.out.println("Before Poping");
+        linkedList.print();
+        linkedList.popBySearch(30);
+        System.out.println("After Poping");
+        linkedList.print();
+    }
 }

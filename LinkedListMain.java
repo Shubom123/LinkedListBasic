@@ -10,6 +10,7 @@ public class LinkedListMain {
         System.out.println("Enter 3 to insert data in between");
         System.out.println("Enter 4 to remove data");
         System.out.println("Enter 5 to remove last node");
+        System.out.println("Enter 6 to remove node by searching");
         Scanner scanner = new Scanner(System.in);
         int choice = scanner.nextInt();
 
@@ -28,6 +29,9 @@ public class LinkedListMain {
                 break;
             case 5:
                 Operations.removeLast();
+                break;
+            case 6:
+                Operations.removeBySearch();
                 break;
             default:
                 System.out.println("wrong choice");
