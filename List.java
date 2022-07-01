@@ -1,5 +1,4 @@
 package com.datastructure;
-import java.util.LinkedList;
 
 public class List {
     Node head;
@@ -102,4 +101,19 @@ public class List {
         System.out.println("Size of linked list is: " + count);
         return count;
     }
+    public void sort(){
+        Node currentNode;
+        Node nextNode;
+        int temp;
+        for(currentNode=head;currentNode.next!=null;currentNode=currentNode.next){
+            for(nextNode=currentNode.next;nextNode!=null;nextNode=nextNode.next){
+                if(currentNode.data>nextNode.data){
+                    temp=currentNode.data;
+                    currentNode.data=nextNode.data;
+                    nextNode.data=temp;
+                }
+            }
+        }
+    }
+
 }

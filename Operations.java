@@ -1,5 +1,5 @@
 package com.datastructure;
-
+import java.util.Collections;
 import java.util.LinkedList;
 
 public class Operations {
@@ -78,6 +78,7 @@ public class Operations {
         System.out.println("After Adding");
         linkedList.print();
         linkedList.size();
+
     }
     public static void removeAddedData(){
         List linkedList = new List();
@@ -92,6 +93,22 @@ public class Operations {
         linkedList.size();
         linkedList.popBySearch(40);
         System.out.println("After Poping");
+        linkedList.print();
+        linkedList.size();
+    }
+    public static void sortData(){
+        List linkedList = new List();
+        linkedList.push(70);
+        linkedList.push(30);
+        linkedList.push(56);
+        System.out.println("Before Adding");
+        linkedList.print();
+        linkedList.insertAfterSearch(30,40);
+        System.out.println("After Adding");
+        linkedList.print();
+        linkedList.size();
+        linkedList.sort();
+        System.out.println("After Sorting");
         linkedList.print();
         linkedList.size();
     }
