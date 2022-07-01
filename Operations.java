@@ -9,6 +9,7 @@ public class Operations {
         linkedList.push(30);
         linkedList.push(56);
         linkedList.print();
+        linkedList.size();
     }
     public static void addDataAtEnd(){
         List linkedList = new List();
@@ -16,6 +17,7 @@ public class Operations {
         linkedList.append(30);
         linkedList.append(70);
         linkedList.print();
+        linkedList.size();
     }
     public static void insertBetween(){
         List linkedList = new List();
@@ -27,6 +29,7 @@ public class Operations {
         linkedList.insertInBetween(firstNode, newNode);
         System.out.println("After");
         linkedList.print();
+        linkedList.size();
     }
     public static void remove(){
         List linkedList = new List();
@@ -38,6 +41,7 @@ public class Operations {
         linkedList.pop();
         System.out.println("After poping");
         linkedList.print();
+        linkedList.size();
     }
     public static void removeLast(){
         List linkedList = new List();
@@ -49,6 +53,7 @@ public class Operations {
         linkedList.popLast();
         System.out.println("After poping");
         linkedList.print();
+        linkedList.size();
     }
     public static void removeBySearch(){
         List linkedList = new List();
@@ -60,6 +65,7 @@ public class Operations {
         linkedList.popBySearch(30);
         System.out.println("After Poping");
         linkedList.print();
+        linkedList.size();
     }
     public static void addAfterSearching(){
         List linkedList = new List();
@@ -71,5 +77,22 @@ public class Operations {
         linkedList.insertAfterSearch(30,40);
         System.out.println("After Adding");
         linkedList.print();
+        linkedList.size();
+    }
+    public static void removeAddedData(){
+        List linkedList = new List();
+        linkedList.push(70);
+        linkedList.push(30);
+        linkedList.push(56);
+        System.out.println("Before Adding");
+        linkedList.print();
+        linkedList.insertAfterSearch(30,40);
+        System.out.println("After Adding");
+        linkedList.print();
+        linkedList.size();
+        linkedList.popBySearch(40);
+        System.out.println("After Poping");
+        linkedList.print();
+        linkedList.size();
     }
 }

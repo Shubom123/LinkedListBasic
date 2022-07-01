@@ -92,4 +92,14 @@ public class List {
             }
         }
     }
+    public int size(){
+        int count = 0;
+        Node temp = head;
+        while (temp!=null){
+            count++;
+            temp=temp.next;
+        }
+        System.out.println("Size of linked list is: " + count);
+        return count;
+    }
 }
