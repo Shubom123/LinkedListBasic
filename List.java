@@ -74,4 +74,22 @@ public class List {
             }
         }
     }
+    public void insertAfterSearch(int key, int data){
+        Node newNode = new Node(data);
+        Node currentNode = head;
+        Node previousNode = null;
+        if(head!=null){
+            while (currentNode!=null && currentNode.data!=key) {
+                previousNode = currentNode;
+                currentNode = currentNode.next;
+            }
+            if(currentNode==null){
+                System.out.println("Value doesn't exist");
+            }
+            else{
+                newNode.next=currentNode.next;
+                currentNode.next=newNode;
+            }
+        }
+    }
 }

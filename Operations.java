@@ -61,4 +61,15 @@ public class Operations {
         System.out.println("After Poping");
         linkedList.print();
     }
+    public static void addAfterSearching(){
+        List linkedList = new List();
+        linkedList.push(70);
+        linkedList.push(30);
+        linkedList.push(56);
+        System.out.println("Before Adding");
+        linkedList.print();
+        linkedList.insertAfterSearch(30,40);
+        System.out.println("After Adding");
+        linkedList.print();
+    }
 }
